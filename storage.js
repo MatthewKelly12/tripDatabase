@@ -81,11 +81,6 @@ const cairo = {
 };
 
 
-
-
-
-
-
 // Create empty object for trips 
 
 const tripsDatabase = {};
@@ -123,16 +118,15 @@ console.log(tripsDatabase.myTrips[5].cityName);
 
 console.log(nashville.cityName);
 
+//  Function to set local storage, and call function
+
 function saveDatabase (databaseObject, localStorageKey) {
     const stringifiedDatabase = JSON.stringify(databaseObject);
     localStorage.setItem(localStorageKey, stringifiedDatabase);
 }
 saveDatabase(tripsDatabase, "Matt's Trips");
 
-// cont Database = function () {
-//     const db = localStorage.getItem("inventoryDataBase")
-//     return JSON.parse(db)
-// }    how to retreive info
+
 
 
 
